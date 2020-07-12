@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js clear
+
+PATH: 
+  /home/glantruan/bin:/home/glantruan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/glantruan/_programming/personal/reactive_streams/package.json: Unexpected string in JSON at position 281
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "reactive_streams",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "glantucan",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+      "start": "parcel src/index.html src/index.js public/**/* ",
+      "build": "parcel build src/index.html src/index.js "
+      "clear": "rm -rv dist/*"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.10.4",
+      "@babel/plugin-proposal-class-properties": "^7.10.4",
+      "@babel/plugin-proposal-private-methods": "^7.10.4",
+      "@babel/preset-env": "^7.10.4",
+      "sass": "^1.26.10"
+    },
+    "dependencies": {
+      "mithril": "^2.0.4"
+    },
+    "staticFiles": {
+      "staticPath": "public",
+      "watcherGlob": "**"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

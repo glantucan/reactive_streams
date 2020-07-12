@@ -1,0 +1,24 @@
+{
+  "name": "reactive_streams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "glantucan",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "parcel src/index.html src/index.js src/public/**/*",
+    "build": "parcel build src/index.html src/index.js src/index.js src/public/**/* --no-content-hash",
+    "clear": "rm -rv dist/*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-private-methods": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "mithril": "^2.0.4"
+  }
+}
