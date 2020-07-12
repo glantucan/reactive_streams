@@ -1,1 +1,3 @@
-# Reaactive streams in mithril.js
+# Fully reactive mithril.js with streams
+
+
